@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Cadastro</title>
+    <link rel="stylesheet" href="site.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Open+Sans&family=Poppins:ital,wght@0,500;1,300&family=Ubuntu:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Open+Sans&family=Poppins:ital,wght@0,500;1,300&family=Ubuntu:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="site">
+        <div id="conteudo">
+            <div id="cabec">
+                <img id="logo" src="ImgPP/logo.png" alt="">
+                <div class="box">
+                    <form name="search">
+                        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                    </form>
+                    <i class="gg-search"></i>
+                </div>
+                <div class="cart">
+
+                    <button class="botao" role="button">
+                        <div id="carrinho"><i class="gg-shopping-cart"></i></div>
+                        Carrinho
+                    </button>
+                </div>
+            </div>
+            <div id="logcad">
+                <div class="loginecad" id="formlogin">
+                    <h1 class="cad textlogcad">Já é cadastrado?</h1>
+                    <p class="subcad textlogcad">Então entre com seus dados de login e senha.</p>
+                    <div id="info">
+                        <form action="login">
+                            <div class="loginsenha">
+                                <div class="inputinteiro">
+                                    <label for="email">Seu Email:</label>
+
+                                    <input class="inputs inemail" type="email" name="email" id="email"
+                                        placeholder="Ex:joaodasilva@gmail.com">
+                                </div>
+                            </div>
+
+                            <div class="loginsenha">
+                                <div class="inputinteiro">
+                                    <label for="senha">Sua Senha:</label>
+
+                                    <input class="inputs insenha" class="insenha" type="password">
+                                </div>
+                            </div class="forget">
+                            <p class="forget"><a class="forget" href="forgetpassword">Esqueceu sua senha?</a></p>
+                            <div class="botaologcad">
+                                <button class="botaoentcad" role="button">Entrar</button>
+                            </div>
+                        </form>
+                    </div>
+                    <h3 class="contas textlogcad">Entrar com sua conta do Facebook ou Google</h3>
+                    <div class="redes">
+                        <button class="imgredes" id="facebook"></button>
+                        <button class="imgredes" id="google"></button>
+                    </div>
+                </div>
+                <div class="loginecad" id="formcad">
+                    <h1 class="cad textlogcad">Faça seu cadastro</h1>
+                    <p class="subcad textlogcad">É bem facil, Preencha com seus dados:</p>
+                    <div id="info">
+                        <form action="cadastrar">
+                            <div class="loginsenha">
+                                <div class="inputinteiro">
+                                    <label for="senha">Seu Nome:</label>
+
+                                    <input class=" inemail inputs" type="text">
+                                </div>
+                                <div class="inputinteiro">
+                                    <label for="email">Seu Email:</label>
+                                    <input class="inemail inputs" type="email" name="email" id="email"
+                                        placeholder="Ex:joaodasilva@gmail.com">
+                                </div>
+                                <div class="inputinteiro">
+                                    <label for="senha">Sua Senha:</label>
+
+                                    <input class="insenha inputs" type="password">
+                                </div>
+                                <div class="inputinteiro">
+                                    <label for="cpf">Seu CPF:</label>
+                                    <input class="incpf inputs" type="number" name="cpf" id="cpf"
+                                        placeholder="Ex:123.456.789.10">
+                                </div>
+                                <div class="inputinteiro">
+                                    <label for="cpf">Data de Nascimento:</label>
+                                    <input class="inputs indate" type="date" name="data" id="data"
+                                        placeholder="Ex:123.456.789.10">
+                                </div>
+                                <h3 class="textlogcad">Sexo:</h3>
+                                <div class="inputinteiro sexo">
+                                    <div id="masc">
+                                        <label for="cpf" class="labelsexo">Masculino:</label>
+                                        <input class="inputs insexo" type="radio" name="sexo" id="sexo">
+                                    </div>
+                                    <div id="femi">
+                                        <label for="femi" class="labelsexo">Feminino:</label>
+                                        <input type="radio" name="sexo" id="sexo" class="inputs insexo">
+                                    </div>
+                                </div>
+                                <div class="inputinteiro">
+                                    <label for="cpf">Telefone:</label>
+                                    <input class="inputs intelefone" type="number" name="data" id="data"
+                                        placeholder="Ex: (15)99999-9999">
+                                </div>
+                                <div class="botaocad">
+                                    <button class="botaoentcad botaocads" role="button">Cadastrar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div id="sub">
+            <div id="news">
+                <h2>Pink! News</h2>
+                <p>Receba Ofertas</p>
+            </div>
+            <div id="inputs">
+                <form action="cadastrar">
+                    <input class="inputsb" id="input1" type="text" placeholder="Qual é o seu nome?">
+                    <input class="inputsb" type="email" placeholder="Seu e-mail?">
+                </form>
+            </div>
+            <a class="bn49" href="/">Cadastrar</a>
+        </div>
+        <div id="rodape">
+            <div class="bandas">
+                <h2 id="nome"><strong>Bandas</strong></h2>
+                <p class="textbanda">Pink Floyd</p>
+                <p class="textbanda">Guns n Roses</p>
+                <p class="textbanda">Led Zeppelin</p>
+                <p class="textbanda">Rainbow</p>
+                <p class="textbanda">AC/DC</p>
+                <p class="textbanda">The Beatles</p>
+                <p class="textbanda">The Rolling Stones</p>
+            </div>
+            <div class="bandas">
+                <h2 id="nome"><strong>Novidades e promoções</strong></h2>
+                <p class="textbanda">Plano Disc</p>
+                <p class="textbanda">Black Friday</p>
+                <p class="textbanda">Mega Outubro</p>
+                <p class="textbanda">Cartão Pink</p>
+                <p class="textbanda">Ofertas do dia</p>
+                <p class="textbanda">Seleção Premium</p>
+            </div>
+            <div class="bandas">
+                <h2 id="nome"><strong>Institucional</strong></h2>
+                <p class="textbanda">Sobre o Pink Discs</p>
+                <p class="textbanda">Politicas do site</p>
+                <p class="textbanda">Politicas de Cookies</p>
+                <p class="textbanda">Trabalhe Conosco</p>
+                <p class="textbanda">Codigo de defesa ao Consumidor</p>
+                <p class="textbanda">Codigo de Conduta e Ética</p>
+                <p class="textbanda">Segurança e Privacidade</p>
+            </div>
+            <div class="bandas">
+                <h2 id="nome"><strong>Acessibilidade</strong></h2>
+                <p class="textbanda">Pink Floyd</p>
+                <h2 id="nome"><strong>Minha Conta</strong></h2>
+                <p class="textbanda">Meus Pedidos</p>
+                <p class="textbanda">Cadastrar ou Remover</p>
+
+                <h2 id="nome"><strong>Redes Sociais</strong></h2>
+                <div id="icons">
+                    <a href=""><img class="imgrs" src="ImgPP/facebook.svg" alt=""></a>
+                    <a href=""><img class="imgrs" src="ImgPP/insta.svg" alt=""></a>
+                    <a href=""><img class="imgrs" src="ImgPP/linkedin.svg" alt=""></a>
+                    <a href=""><img class="imgrs" src="ImgPP/twitter.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="bandas">
+                <h2 id="nome"><strong>Atendimento</strong></h2>
+                <p class="textbanda">Horario de atendimento: 8:00 às 18:00
+                </p>
+                <p class="textbanda">Endereço: Itapetininga/SP</p>
+                <p class="textbanda">Central Serviço Atendimento ao Cliente: (15)99898-9889</p>
+                <p class="textbanda">E-mail: contato@pinkdiscs.com</p>
+                <div id="chat">
+                    <a class="chatbutton" href="/">
+                        <img class="imgchat" src="ImgPP/chat-fill.svg" alt="">
+                        Iniciar Atendimento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

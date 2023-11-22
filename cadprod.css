@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 40px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    align-content: center;
+}
+#prod{
+    width: 600px;
+
+}
+.divaddprod{
+    width: 500px;
+}
+.addprod{
+    display: flex;
+}
+#textprod{
+    margin-left: 10px;
+    font-size: 25px;
+}
+.titulo{
+    margin: 60px 0px 30px 30px;
+}
+.inputtitle{
+    width: 500px;
+    height: 35px;
+    border-radius: 10px;
+}
+.inputtitle::placeholder {
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.desc{
+    margin: 0px 0px 30px 30px;
+}
+.descarea{
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+}
+.midia{
+
+
+    width: 500px;
+    height: 150px;
+}
+.inputfile{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 100px;
+    border:dotted;
+    border-radius: 10px;
+}
+.file{
+    margin-top: 20px;
+    height: 25px;
+    padding: 0px;
+    width:115px ;
+}
+#p{
+    font-weight: lighter;
+    margin-bottom: 40px;
+    padding: 0px;
+    text-transform:capitalize;
+    font-size: 20px;
+}
+
+.caixapreco{
+    width: 500px;
+}
+.precoecomp{
+    display: flex;
+}
+.precoeinput{
+
+    margin-right: 77px;
+    width: 100px;
+    height: 70px;
+}
+#number{
+    border-radius: 10px;
+    width: 140px;
+    height: 25px;
+}
+#preco{
+    margin-top: 24px;
+}
+#CLMdiv{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+#number::placeholder{
+    padding-left: 10px;
+}
+.caixas{
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 40px 0px 30px 0px;
+    border-radius: 10px;
+    margin:30px;
+    padding: 30px;
+    background-color: rgb(248, 248, 248);
+}
+
+.textorg{
+   margin-bottom: 5px;
+}
+.titulos{
+    margin-bottom: 25px;
+    display: flex;
+    text-align: center;
+}
+

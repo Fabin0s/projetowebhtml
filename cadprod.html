@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cad Prod</title>
+    <link rel="stylesheet" href="cadprod.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Open+Sans&family=Poppins:ital,wght@0,700;1,300&family=Ubuntu:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div id="prod">
+        <div class="divaddprod">
+            <div class="addprod">
+                <a href=""><i class="gg-close"></i></a>
+                <p id="textprod">Adicionar Produto</p>
+            </div>
+            <div class="caixas">
+                <h3 class="titulos">Título</h3>
+                <input class="inputtitle" type="text" placeholder="Disco Pink Floyd - Dark Side of the Moon">
+            </div>
+            <div class="caixas">
+                <h3 class="titulos">Descrição</h3>
+                <textarea class="descarea" name="" id="" placeholder=""></textarea>
+            </div>
+            <div class="caixas">
+                <h3 class="titulos">Descrição</h3>
+                <div class="inputfile">
+                    <div id="input">
+                        <input class="file" type="file">
+                    </div>
+                    <p id="p">Aceita imagens,vídeos ou modelos 3D</p>
+                </div>
+            </div>
+            <div class="caixas">
+                <h3 class="titulos">Preço</h3>
+                <div class="caixapreco">
+                    <div class="precoecomp">
+                        <div class="precoeinput"  class="prods">
+                            <p class="textp" id="preco">Preço</p>
+                            <input id="number" type="number" name="" id="" placeholder="99,99R$">
+                        </div>
+                        <div class="precoeinput" class="prods" >
+                            <p class="textp">Comparação de Preços</p>
+                            <input id="number" type="number" name="" id="" placeholder="99,99R$">
+                        </div>
+                    </div>
+                    <div id="CLMdiv">
+                        <div class="prods" class="CLM">
+                            <p class="textc">Custo por item</p>
+                            <input id="number" type="number" name="" id="" placeholder="99,99R$">
+                        </div>
+                        <div class="CLM">
+                            <p class="textc">Lucro</p>
+                            <input id="number" type="number" name="" id="" placeholder="--">
+                        </div>
+                        <div class="CLM">
+                            <p class="textc">Margem</p>
+                            <input id="number" type="number" name="" id="" placeholder="--">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="caixas">
+                <h3 class="titulos">Organização do produto</h3>
+                <div class="prods">
+                    <p class="textorg">Categoria do produto</p>
+                    <input class="inputtitle" type="text" ">
+                    <p class="textorg">Tipo de Produto</p>
+                    <input class="inputtitle" type="text" ">
+                    <p class="textorg">Fornecedor</p>
+                    <input class="inputtitle" type="text" ">
+                    <p class="textorg">Coleções</p>
+                    <input class="inputtitle" class="textorg" type="text" ">
+                    <p class="textorg">Tags</p>
+                    <input class="inputtitle" type="text" ">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
