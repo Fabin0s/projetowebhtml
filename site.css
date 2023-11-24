@@ -697,7 +697,9 @@ strong {
 }
 
 /*Carrinho e finalização de compra */
-
+.linksdorodape{
+    text-decoration: none;
+}
 
 /*remover depois*/
 #carcarrinho {
@@ -971,7 +973,7 @@ strong {
     margin:30px;
     padding: 30px;
     background-color: rgb(36, 36, 36);
-}rgb(82, 82, 82)
+}
 
 .textorg{
    margin-top: 15px;
