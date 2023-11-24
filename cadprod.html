@@ -5,85 +5,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cad Prod</title>
-    <link rel="stylesheet" href="cadprod.css">
+    <link rel="stylesheet" href="site.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
+    <link
         href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Open+Sans&family=Poppins:ital,wght@0,700;1,300&family=Ubuntu:ital,wght@1,500&display=swap"
         rel="stylesheet">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'>
+    <link rel="stylesheet" href="site.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="site.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-cart.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Open+Sans&family=Poppins:ital,wght@0,500;1,300&family=Ubuntu:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mohave:wght@500&family=Open+Sans&family=Poppins:ital,wght@0,500;1,300&family=Ubuntu:ital,wght@1,500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div id="prod">
-        <div class="divaddprod">
-            <div class="addprod">
-                <a href=""><i class="gg-close"></i></a>
-                <p id="textprod">Adicionar Produto</p>
-            </div>
-            <div class="caixas">
-                <h3 class="titulos">Título</h3>
-                <input class="inputtitle" type="text" placeholder="Disco Pink Floyd - Dark Side of the Moon">
-            </div>
-            <div class="caixas">
-                <h3 class="titulos">Descrição</h3>
-                <textarea class="descarea" name="" id="" placeholder=""></textarea>
-            </div>
-            <div class="caixas">
-                <h3 class="titulos">Descrição</h3>
-                <div class="inputfile">
-                    <div id="input">
-                        <input class="file" type="file">
-                    </div>
-                    <p id="p">Aceita imagens,vídeos ou modelos 3D</p>
+    <div id="site">
+        <div id="conteudo">
+            <div id="cabec">
+                <a href="index.html">
+                    <img id="logo" src="ImgPP/logo.png" alt=""></a>
+                <div class="box">
+                    <form name="search">
+                        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                    </form>
+                    <i class="gg-search"></i>
+                </div>
+                <div class="cart">
+                    <a href="carrinho.html">
+                        <button class="botao" role="button">
+                            <div id="carrinho"><i class="gg-shopping-cart"></i></div>
+                            Carrinho
+                        </button>
+                    </a>
                 </div>
             </div>
-            <div class="caixas">
-                <h3 class="titulos">Preço</h3>
-                <div class="caixapreco">
-                    <div class="precoecomp">
-                        <div class="precoeinput"  class="prods">
-                            <p class="textp" id="preco">Preço</p>
-                            <input id="number" type="number" name="" id="" placeholder="99,99R$">
-                        </div>
-                        <div class="precoeinput" class="prods" >
-                            <p class="textp">Comparação de Preços</p>
-                            <input id="number" type="number" name="" id="" placeholder="99,99R$">
+            <div id="cadastrarprod">
+                <div id="barralado">
+                    <div id="alteracao">
+                        <h1>Alteração</h1>
+                        <h3><a class="meusprod" href="">Todos Produtos</a></h3>
+                        <h3><a class="meusprod" href="">Adicionar Varios Produtos</a></h3>
+                        <h3><a class="meusprod" href="">Grupos de Produtos</a></h3>
+                    </div>
+                    <div id="relatorios">
+                        <h1>Relatórios</h1>
+                        <h3><a class="meusprod" href="">Relatório 1</a></h3>
+                        <h3><a class="meusprod" href="">Relatórios Anuais</a></h3>
+                        <h3><a class="meusprod" href="">Relatórios Mensais</a></h3>
+                        <h3><a class="meusprod" href="">Relatórios Semanais</a></h3>
+                        <h3><a class="meusprod" href="">Relatórios Diarios</a></h3>
+                    </div>
+                </div>
+                <div class="divaddprod">
+                    <div class="adicionarprod">
+                        <a href=""><i class="gg-close"></i></a>
+                        <p id="textprod">Adicionar Produto</p>
+                    </div>
+                    <div class="caixasadd">
+                        <h3 class="titulos">Título</h3>
+                        <input class="inputtitle" type="text" placeholder="Disco Pink Floyd - Dark Side of the Moon">
+                    </div>
+                    <div class="caixasadd">
+                        <h3 class="titulos">Descrição</h3>
+                        <textarea class="descarea" name="" id="" placeholder=""></textarea>
+                    </div>
+                    <div class="caixasadd">
+                        <h3 class="titulos">Imagens</h3>
+                        <div class="inputfile">
+                            <div id="input">
+                                <input class="file" type="file">
+                            </div>
+                            <p id="p">Aceita imagens,vídeos ou modelos 3D</p>
                         </div>
                     </div>
-                    <div id="CLMdiv">
-                        <div class="prods" class="CLM">
-                            <p class="textc">Custo por item</p>
-                            <input id="number" type="number" name="" id="" placeholder="99,99R$">
+                    <div class="caixasadd">
+                        <h3 class="titulos">Preço</h3>
+                        <div class="caixapreco">
+                            <div class="precoecomp">
+                                <div id="caixaprecoecomp">
+                                    <div class="precosecomp">
+                                        <p>Preço</p>
+                                        <input type="number" name="" class="number" placeholder="R$99,99">
+                                    </div>
+                                    <div class="precosecomp">
+                                        <p>Comparação de Preço</p>
+                                        <input type="number" name="" class="number" placeholder="R$99,99">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="CLMdiv">
+                                <div class="prods" class="CLM">
+                                    <p class="textc">Custo por item</p>
+                                    <input class="number" type="number" name="" id="" placeholder="99,99R$">
+                                </div>
+                                <div class="CLM">
+                                    <p class="textc">Lucro</p>
+                                    <input class="number" type="number" name="" id="" placeholder="--">
+                                </div>
+                                <div class="CLM">
+                                    <p class="textc">Margem</p>
+                                    <input class="number" type="number" name="" id="" placeholder="--">
+                                </div>
+                            </div>
                         </div>
-                        <div class="CLM">
-                            <p class="textc">Lucro</p>
-                            <input id="number" type="number" name="" id="" placeholder="--">
-                        </div>
-                        <div class="CLM">
-                            <p class="textc">Margem</p>
-                            <input id="number" type="number" name="" id="" placeholder="--">
-                        </div>
-                    </div> 
+                    </div>
+                    <div class="caixasadd">
+                        <h3 class="titulos">Organização do produto</h3>
+                        <div class="prods">
+                            <p class="textorg">Categoria do produto</p>
+                            <input class="inputtitle" type="text" ">
+                    <p class=" textorg">Tipo de Produto</p>
+                            <input class="inputtitle" type="text" ">
+                    <p class=" textorg">Fornecedor</p>
+                            <input class="inputtitle" type="text" ">
+                    <p class=" textorg">Coleções</p>
+                            <input class="inputtitle" class="textorg" type="text" ">
+                    <p class=" textorg">Tags</p>
+                            <input class="inputtitle" type="text" ">
                 </div>
             </div>
-            <div class="caixas">
-                <h3 class="titulos">Organização do produto</h3>
-                <div class="prods">
-                    <p class="textorg">Categoria do produto</p>
-                    <input class="inputtitle" type="text" ">
-                    <p class="textorg">Tipo de Produto</p>
-                    <input class="inputtitle" type="text" ">
-                    <p class="textorg">Fornecedor</p>
-                    <input class="inputtitle" type="text" ">
-                    <p class="textorg">Coleções</p>
-                    <input class="inputtitle" class="textorg" type="text" ">
-                    <p class="textorg">Tags</p>
-                    <input class="inputtitle" type="text" ">
+                </div>
+                
+            </div>
+        </div>
+        <div id="sub">
+            <div id="news">
+                <h2>Pink! News</h2>
+                <p>Receba Ofertas</p>
+            </div>
+            <div id="inputs">
+                <form action="cadastrar">
+                    <input class="inputsb" id="input1" type="text" placeholder="Qual é o seu nome?">
+                    <input class="inputsb" type="email" placeholder="Seu e-mail?">
+                </form>
+            </div>
+            <a class="bn49" href="/">Cadastrar</a>
+        </div>
+        <div id="rodape">
+            <div class="bandas">
+                <h2 id="nome"><strong>Bandas</strong></h2>
+                <p class="textbanda">Pink Floyd</p>
+                <p class="textbanda">Guns n Roses</p>
+                <p class="textbanda">Led Zeppelin</p>
+                <p class="textbanda">Rainbow</p>
+                <p class="textbanda">AC/DC</p>
+                <p class="textbanda">The Beatles</p>
+                <p class="textbanda">The Rolling Stones</p>
+            </div>
+            <div class="bandas">
+                <h2 id="nome"><strong>Novidades e promoções</strong></h2>
+                <p class="textbanda">Plano Disc</p>
+                <p class="textbanda">Black Friday</p>
+                <p class="textbanda">Mega Outubro</p>
+                <p class="textbanda">Cartão Pink</p>
+                <p class="textbanda">Ofertas do dia</p>
+                <p class="textbanda">Seleção Premium</p>
+            </div>
+            <div class="bandas">
+                <h2 id="nome"><strong>Institucional</strong></h2>
+                <p class="textbanda">Sobre o Pink Discs</p>
+                <p class="textbanda">Politicas do site</p>
+                <p class="textbanda">Politicas de Cookies</p>
+                <p class="textbanda">Trabalhe Conosco</p>
+                <p class="textbanda">Codigo de defesa ao Consumidor</p>
+                <p class="textbanda">Codigo de Conduta e Ética</p>
+                <p class="textbanda">Segurança e Privacidade</p>
+            </div>
+            <div class="bandas">
+                <h2 id="nome"><strong>Acessibilidade</strong></h2>
+                <p class="textbanda">Pink Floyd</p>
+                <h2 id="nome"><strong>Minha Conta</strong></h2>
+                <p class="textbanda">Meus Pedidos</p>
+                <p class="textbanda">Cadastrar ou Remover</p>
+    
+                <h2 id="nome"><strong>Redes Sociais</strong></h2>
+                <div id="icons">
+                    <a href=""><img class="imgrs" src="ImgPP/facebook.svg" alt=""></a>
+                    <a href=""><img class="imgrs" src="ImgPP/insta.svg" alt=""></a>
+                    <a href=""><img class="imgrs" src="ImgPP/linkedin.svg" alt=""></a>
+                    <a href=""><img class="imgrs" src="ImgPP/twitter.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="bandas">
+                <h2 id="nome"><strong>Atendimento</strong></h2>
+                <p class="textbanda">Horario de atendimento: 8:00 às 18:00
+                </p>
+                <p class="textbanda">Endereço: Itapetininga/SP</p>
+                <p class="textbanda">Central Serviço Atendimento ao Cliente: (15)99898-9889</p>
+                <p class="textbanda">E-mail: contato@pinkdiscs.com</p>
+                <div id="chat">
+                    <a class="chatbutton" href="/">
+                        <img class="imgchat" src="ImgPP/chat-fill.svg" alt="">
+                        Iniciar Atendimento
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 </html>
